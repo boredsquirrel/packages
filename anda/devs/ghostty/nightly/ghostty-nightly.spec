@@ -42,7 +42,7 @@ Requires:       gtk4
 Requires:       libadwaita
 Conflicts:      ghostty
 Provides:       ghostty-tip = %{version}-%{release}
-Obsoletes:      %{name} <= 20250203.f0d2760-1%{?dist}
+Obsoletes:      %{name} <= 20250204.f0d2760-1%{?dist}
 Packager:       ShinyGil <rockgrub@disroot.org>
 
 %description
@@ -64,7 +64,7 @@ Summary:        Ghostty Fish completion
 Requires:       %{name} = %{version}-%{release}
 Requires:       fish
 Supplements:    (%{name} and fish)
-Obsoletes:      %{name}-fish-completion <= 20250203.f0d2760-1%{?dist}
+Obsoletes:      %{name}-fish-completion <= 20250204.f0d2760-1%{?dist}
 BuildArch:      noarch
 
 %description    fish-completion
@@ -75,7 +75,7 @@ Summary:        Ghostty Zsh completion
 Requires:       %{name} = %{version}-%{release}
 Requires:       zsh
 Supplements:    (%{name} and zsh)
-Obsoletes:      %{name}-zsh-completion <= 20250203.f0d2760-1%{?dist}
+Obsoletes:      %{name}-zsh-completion <= 20250204.f0d2760-1%{?dist}
 BuildArch:      noarch
 
 %description    zsh-completion
@@ -84,7 +84,7 @@ Zsh shell completion for Ghostty.
 %package        shell-integration
 Summary:        Ghostty shell integration
 Supplements:    %{name}
-Obsoletes:      %{name}-shell-integration <= 20250203.f0d2760-1%{?dist}
+Obsoletes:      %{name}-shell-integration <= 20250204.f0d2760-1%{?dist}
 BuildArch:      noarch
 
 %description    shell-integration
@@ -93,7 +93,7 @@ This package contains files allowing Ghostty to integrate with various shells.
 %package        terminfo
 Summary:        Ghostty terminfo
 Supplements:    %{name}
-Obsoletes:      %{name}-terminfo <= 20250203.f0d2760-1%{?dist}
+Obsoletes:      %{name}-terminfo <= 20250204.f0d2760-1%{?dist}
 BuildArch:      noarch
 
 %description    terminfo
@@ -190,7 +190,7 @@ zig build \
 
 %changelog
 * Fri Jan 31 2025 ShinyGil <rockgrub@disroot.org>
-- Update to 1.1.1-1%{?dist}.20250131tipc5508e7
+- Update to 1.1.0-1.tip1.1.1^20250203.f0d2760%{?dist}
  * Low GHSA-98wc-794w-gjx3: Ghostty leaked file descriptors allowing the shell and any of its child processes to impact other Ghostty terminal instances
  * Better Git versioning scheme
  * Ghostty terminfo source files are now a subpackage
