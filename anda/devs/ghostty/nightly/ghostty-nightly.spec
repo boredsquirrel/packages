@@ -42,7 +42,7 @@ Requires:       gtk4
 Requires:       libadwaita
 Conflicts:      ghostty
 Provides:       ghostty-tip = %{version}-%{release}
-Obsoletes:      %{name} <= 20250204.f0d2760-1%{?dist}
+Obsoletes:      %{name} = 20250130.04d3636-1%{?dist}
 Packager:       ShinyGil <rockgrub@disroot.org>
 
 %description
@@ -53,7 +53,7 @@ Summary:        Ghostty Bash completion
 Requires:       %{name} = %{version}-%{release}
 Requires:       bash-completion
 Supplements:    (%{name} and bash-completion)
-Obsoletes:      %{name}-bash-completion <= 20250203.f0d2760-1%{?dist}}
+Obsoletes:      %{name}-bash-completion = 20250130.04d3636-1%{?dist}
 BuildArch:      noarch
 
 %description    bash-completion
@@ -64,7 +64,7 @@ Summary:        Ghostty Fish completion
 Requires:       %{name} = %{version}-%{release}
 Requires:       fish
 Supplements:    (%{name} and fish)
-Obsoletes:      %{name}-fish-completion <= 20250204.f0d2760-1%{?dist}
+Obsoletes:      %{name}-fish-completion = 20250130.04d3636-1%{?dist}
 BuildArch:      noarch
 
 %description    fish-completion
@@ -75,7 +75,7 @@ Summary:        Ghostty Zsh completion
 Requires:       %{name} = %{version}-%{release}
 Requires:       zsh
 Supplements:    (%{name} and zsh)
-Obsoletes:      %{name}-zsh-completion <= 20250204.f0d2760-1%{?dist}
+Obsoletes:      %{name}-zsh-completion = 20250130.04d3636-1%{?dist}
 BuildArch:      noarch
 
 %description    zsh-completion
@@ -84,7 +84,7 @@ Zsh shell completion for Ghostty.
 %package        shell-integration
 Summary:        Ghostty shell integration
 Supplements:    %{name}
-Obsoletes:      %{name}-shell-integration <= 20250204.f0d2760-1%{?dist}
+Obsoletes:      %{name}-shell-integration = 20250130.04d3636-1%{?dist}
 BuildArch:      noarch
 
 %description    shell-integration
@@ -93,7 +93,7 @@ This package contains files allowing Ghostty to integrate with various shells.
 %package        terminfo
 Summary:        Ghostty terminfo
 Supplements:    %{name}
-Obsoletes:      %{name}-terminfo <= 20250204.f0d2760-1%{?dist}
+Obsoletes:      %{name}-terminfo = 20250130.04d3636-1%{?dist}
 BuildArch:      noarch
 
 %description    terminfo
